@@ -43,6 +43,10 @@ function limparCampos() {
   esconderResultado();
 }
 
+function sair() {
+    window.close();
+}
+
 const objOperacoes = {
   "+": (a, b) => soma(a, b),
   "-": (a, b) => subtracao(a, b),
