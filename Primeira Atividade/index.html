@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Atividade - Segundo Bimestre</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <h2>Selecione a operação:</h1>
+        <form id="form">
+            <input type="number" id="numeroA" required>
+            <select name="operacao" id="selectBoxOperacao">
+                <option value="">Selecione uma operação</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+            <input type="number" id="numeroB" required>
+            <button id="botaoCalcular" type="submit">Calcular</button>
+        </form>
+        <p class="hidden" id="pResultado">Resultado: <label id="labelResultado"></label></p>
+        <button onclick="limparCampos()">Limpar Campos</button>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
